@@ -1,0 +1,21 @@
+/* Projects */
+.projects {
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    background-color: #ebebeb;
+}
+
+.projects:hover {
+    transition: 0.3s ease-in-out all;
+    transform: scale(1.05);
+}
+
+.project-img {
+    max-width: 100%;
+}
+
+.project-content {
+    padding: 1rem 0;
+    color: black;
+}
