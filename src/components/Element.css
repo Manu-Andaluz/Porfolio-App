@@ -3,12 +3,12 @@
     align-items: center;
     margin: 0 auto;
     min-height: 100vh;
-    width: 90%;
+    width: 75%;
     padding: 0 1rem;
 }
 
 .sections-bar {
-    width: 25%;
+    width: auto;
     display: grid;
     gap: 4rem;
     justify-content: left;
@@ -16,24 +16,42 @@
 
 .btn-section {
     text-align: left;
-    font-weight: 600;
     letter-spacing: 1px;
     border: none;
     width: 100%;
     background-color: transparent;
-    font-size: 1.6rem;
+    padding-left: 1rem;
+    font-size: 1.3rem;
     cursor: pointer;
-    border-bottom: 1px solid transparent;
+    border-left: 2px solid transparent;
     color: white;
 }
 
 .btn-section:hover {
     transition: .4s ease;
-    color: rgb(201, 201, 201);
+    border-left-color: skyblue;
+    color: skyblue;
 }
 
 @media (max-width:1180px) {
+    .container-portfolio {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+    }
+
     .sections-bar {
-        display: none;
+        position: absolute;
+        bottom: 90%;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .btn-section {
+        font-size: 10px;
     }
 }

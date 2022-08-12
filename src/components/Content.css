@@ -8,8 +8,9 @@ li {
     text-align: center;
     margin: 0 auto;
     gap: 2rem;
-    width: 60%;
-    height: 100%;
+    width: 65%;
+    max-height: 100%;
+    justify-content: center;
 }
 
 .title h2 {
@@ -24,10 +25,10 @@ li {
 .container-projects {
     display: grid;
     grid-template-columns: repeat(auto-fit,
-            minmax(250px, 1fr));
+            minmax(200px, 1fr));
     gap: 16px;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* About Me */
@@ -37,30 +38,45 @@ li {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
     margin: 0 auto;
 }
 
 .aboutme-content p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 80%;
     margin: 2rem auto;
 }
 
+.aboutme-image {
+    width: 120px;
+}
+
+.aboutme-image img {
+    max-width: 100%;
+}
+
+.contact-links {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.contact-links a {
+    color: rgb(214, 214, 214);
+    font-size: 1.8rem;
+}
+
 /* Form */
 .contact-form {
+    width: 100%;
     display: grid;
-    background-color: #fff;
-    padding: 3rem 1rem;
-    min-height: 50vh;
-    width: 80%;
+    background-color: rgb(214, 214, 214);
+    border-radius: 1rem;
+    padding: 4rem 2rem;
+    max-height: 100%;
     margin: 0 auto;
     gap: 1rem;
     text-align: center;
-}
-
-.contact-form h2 {
-    color: black;
 }
 
 .contact-form input {
@@ -83,15 +99,28 @@ li {
     margin: 1rem auto;
     padding: 1rem 0;
     width: 90%;
-    background-color: #d8e0fd;
+    background-color: #2b4c7c;
+    color: white;
     border: none;
 }
 
 .contact-btn:hover {
-    background-color: #c2cffc;
+    background-color: #21395e;
 }
 
 .contact-btn:hover span {
     margin-left: 0.5rem;
     transition: 0.2s;
+}
+
+
+@media (max-width:1180px) {
+    .section-content {
+        margin-top: 10rem;
+    }
+
+
+    .contact-form {
+        width: 100%;
+    }
 }

@@ -3,12 +3,12 @@ import Content from "./Content";
 import sections from "./Data";
 import "./Element.css";
 
-const Element = () => {
-  const [section, setSection] = useState([...sections]);
+const Element = ({ item }) => {
+  const [section, setSection] = useState(item[0]);
 
   const handleChange = (e) => {
     console.log(e.target.value);
-    setSection(sections[e.target.value]);
+    setSection(item[e.target.value]);
   };
 
   return (

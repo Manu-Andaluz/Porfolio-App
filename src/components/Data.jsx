@@ -17,6 +17,29 @@ const sections = [
             developer.
           </p>
         </div>
+        <div class="contact-links">
+          <a
+            href="https://github.com/Manu-Andaluz"
+            target="_blank"
+            class="contact_link"
+          >
+            <i class="fa-brands fa-github-square"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/manuel-andaluz"
+            target="_blank"
+            class="contact_link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/_manuppe/"
+            target="_blank"
+            class="contact_link"
+          >
+            <i class="fa-brands fa-instagram-square"></i>
+          </a>
+        </div>
       </div>
     ),
   },
@@ -63,7 +86,6 @@ const sections = [
     title: "Contact",
     content: (
       <form className="contact-form">
-        <h2>Form</h2>
         <input type="text" placeholder="Name" />
         <input type="text" placeholder="Email" />
         <input type="text" placeholder="Menssage" className="menssage" />
