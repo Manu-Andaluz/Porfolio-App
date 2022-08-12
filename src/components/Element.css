@@ -16,6 +16,8 @@
 
 .btn-section {
     text-align: left;
+    font-weight: 600;
+    letter-spacing: 1px;
     border: none;
     width: 100%;
     background-color: transparent;
@@ -27,5 +29,11 @@
 
 .btn-section:hover {
     transition: .4s ease;
-    border-bottom-color: white;
+    color: rgb(201, 201, 201);
+}
+
+@media (max-width:1180px) {
+    .sections-bar {
+        display: none;
+    }
 }

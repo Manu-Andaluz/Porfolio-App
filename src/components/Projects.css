@@ -1,4 +1,8 @@
 /* Projects */
+a {
+    text-decoration: none;
+}
+
 .projects {
     border: 1px solid black;
     text-align: center;
