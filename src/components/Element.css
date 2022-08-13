@@ -1,57 +1,29 @@
 .container-portfolio {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+    width: 100%;
     min-height: 100vh;
-    width: 75%;
-    padding: 0 1rem;
 }
 
 .sections-bar {
-    width: auto;
-    display: grid;
-    gap: 4rem;
-    justify-content: left;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
 }
 
 .btn-section {
-    text-align: left;
     letter-spacing: 1px;
     border: none;
-    width: 100%;
     background-color: transparent;
-    padding-left: 1rem;
     font-size: 1.3rem;
     cursor: pointer;
-    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    margin-bottom: 1rem;
     color: white;
 }
 
 .btn-section:hover {
     transition: .4s ease;
-    border-left-color: skyblue;
+    border-bottom-color: skyblue;
     color: skyblue;
-}
-
-@media (max-width:1180px) {
-    .container-portfolio {
-        margin: 0 auto;
-        width: 100%;
-        padding: 0;
-    }
-
-    .sections-bar {
-        position: absolute;
-        bottom: 90%;
-        display: flex;
-        justify-content: center;
-        gap: 0;
-        width: 100%;
-        margin: 0 auto;
-        align-items: center;
-    }
-
-    .btn-section {
-        font-size: 10px;
-    }
 }

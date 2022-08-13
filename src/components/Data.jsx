@@ -85,14 +85,16 @@ const sections = [
     id: 2,
     title: "Contact",
     content: (
-      <form className="contact-form">
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Menssage" className="menssage" />
-        <button className="contact-btn">
-          Enviar <span>&rarr;</span>
-        </button>
-      </form>
+      <section className="contact">
+        <form className="contact-form">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Menssage" className="menssage" />
+          <button className="contact-btn">
+            Enviar <span>&rarr;</span>
+          </button>
+        </form>
+      </section>
     ),
   },
 ];
